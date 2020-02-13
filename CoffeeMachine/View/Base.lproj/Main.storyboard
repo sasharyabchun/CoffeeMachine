@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ooc-Kp-HJT">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="zld-Rt-PST">
+            <objects>
+                <viewController id="hkY-Kh-z2H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ge-Yi-ysh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZSQ-U1-PTa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="OVP-6K-fhb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="50.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OVP-6K-fhb" id="VYv-Va-IQ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-pw-GWB">
+                                                    <rect key="frame" x="10" y="9.9999999999999982" width="394" height="30.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtu-rh-GJ7">
+                                                            <rect key="frame" x="0.0" y="5" width="80" height="20.333333333333332"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="8nC-4c-AzI"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="usM-pV-TOh">
+                                                            <rect key="frame" x="85" y="14.333333333333332" width="254" height="2"/>
+                                                        </progressView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EB-fc-FWV">
+                                                            <rect key="frame" x="344" y="0.33333333333333393" width="50" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="k2a-Me-y2L"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="yjy-pw-GWB" secondAttribute="bottom" constant="10" id="EFX-WL-tps"/>
+                                                <constraint firstAttribute="trailing" secondItem="yjy-pw-GWB" secondAttribute="trailing" constant="10" id="OeZ-4m-e6X"/>
+                                                <constraint firstItem="yjy-pw-GWB" firstAttribute="leading" secondItem="VYv-Va-IQ8" secondAttribute="leading" constant="10" id="Sr6-y8-EJV"/>
+                                                <constraint firstItem="yjy-pw-GWB" firstAttribute="top" secondItem="VYv-Va-IQ8" secondAttribute="top" constant="10" id="ffs-mj-WUJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SuF-cr-vnd" firstAttribute="trailing" secondItem="ZSQ-U1-PTa" secondAttribute="trailing" id="EkG-aX-ztf"/>
+                            <constraint firstItem="SuF-cr-vnd" firstAttribute="top" secondItem="ZSQ-U1-PTa" secondAttribute="top" id="PSn-iA-A6a"/>
+                            <constraint firstItem="ZSQ-U1-PTa" firstAttribute="leading" secondItem="SuF-cr-vnd" secondAttribute="leading" id="jUv-7A-eQ1"/>
+                            <constraint firstItem="ZSQ-U1-PTa" firstAttribute="bottom" secondItem="SuF-cr-vnd" secondAttribute="bottom" id="wue-VI-lHv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SuF-cr-vnd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="person" catalog="system" id="fc8-LQ-L5t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTF-l7-NWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057.971014492754" y="-280.58035714285711"/>
+        </scene>
+        <!--Coffee Machine-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO0-Ri-zjn">
+                                <rect key="frame" x="0.0" y="124" width="414" height="609"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeeMachine" translatesAutoresizingMaskIntoConstraints="NO" id="vdB-jg-Scf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="609"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vdB-jg-Scf" secondAttribute="height" multiplier="750:1103" id="ght-qI-gKA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E8w-GB-Jgv">
+                                        <rect key="frame" x="162.33333333333334" y="70" width="89.333333333333343" height="134"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-V4-BLo">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="134"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddp-Ec-U8y" userLabel="cappuccino">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="44.666666666666664"/>
+                                                        <state key="normal" image="cappuccino"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9R-Ic-aU1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32U-k9-TR3" userLabel="coffee">
+                                                        <rect key="frame" x="0.0" y="44.666666666666657" width="44.666666666666664" height="44.666666666666657"/>
+                                                        <state key="normal" image="coffee"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bmd-d4-1Rg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-N0-BTz" userLabel="espresso">
+                                                        <rect key="frame" x="0.0" y="89.333333333333314" width="44.666666666666664" height="44.666666666666657"/>
+                                                        <state key="normal" image="espresso"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7O6-Dn-rlq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S0f-32-U9C">
+                                                <rect key="frame" x="44.666666666666657" y="0.0" width="44.666666666666657" height="134"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-aV-QoA" userLabel="latte">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="44.666666666666664"/>
+                                                        <state key="normal" image="latte"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfx-cM-Xxp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgK-0n-f1D" userLabel="latte macchiato">
+                                                        <rect key="frame" x="0.0" y="44.666666666666657" width="44.666666666666664" height="44.666666666666657"/>
+                                                        <state key="normal" image="latte macchiato"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7S5-Gf-QPo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-w8-tJN" userLabel="ristretto">
+                                                        <rect key="frame" x="0.0" y="89.333333333333314" width="44.666666666666664" height="44.666666666666657"/>
+                                                        <state key="normal" image="ristretto"/>
+                                                        <connections>
+                                                            <action selector="coffeeTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DBD-WO-yKv"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="E8w-GB-Jgv" secondAttribute="height" multiplier="2:3" id="hUx-Py-fbB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vdB-jg-Scf" secondAttribute="trailing" id="5PZ-NZ-YMv"/>
+                                    <constraint firstItem="vdB-jg-Scf" firstAttribute="top" secondItem="GO0-Ri-zjn" secondAttribute="top" id="Bmu-cb-VMI"/>
+                                    <constraint firstItem="E8w-GB-Jgv" firstAttribute="centerX" secondItem="vdB-jg-Scf" secondAttribute="centerX" id="P9s-bj-Onu"/>
+                                    <constraint firstAttribute="bottom" secondItem="vdB-jg-Scf" secondAttribute="bottom" id="QRh-EB-V7m"/>
+                                    <constraint firstItem="E8w-GB-Jgv" firstAttribute="centerY" secondItem="vdB-jg-Scf" secondAttribute="centerY" multiplier="0.45" id="UcZ-pN-CMj"/>
+                                    <constraint firstItem="E8w-GB-Jgv" firstAttribute="height" secondItem="vdB-jg-Scf" secondAttribute="height" multiplier="0.22" id="ge4-G8-43q"/>
+                                    <constraint firstItem="vdB-jg-Scf" firstAttribute="leading" secondItem="GO0-Ri-zjn" secondAttribute="leading" id="hfW-zd-e05"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GO0-Ri-zjn" firstAttribute="height" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="height" id="Amj-dU-zIR"/>
+                            <constraint firstItem="GO0-Ri-zjn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="L7t-a3-pZv"/>
+                            <constraint firstItem="GO0-Ri-zjn" firstAttribute="width" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="width" id="fJF-pw-La3"/>
+                            <constraint firstItem="GO0-Ri-zjn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zgm-0k-1aM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" id="Ol2-hV-gda"/>
+                    <navigationItem key="navigationItem" title="Coffee Machine" id="Rjy-jz-l5f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2058" y="502"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZAJ-At-DOj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ooc-Kp-HJT" customClass="TabBarController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkz-TB-uSH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tI0-yX-OwC"/>
+                        <segue destination="hkY-Kh-z2H" kind="relationship" relationship="viewControllers" id="0iH-Wu-p7X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2c-1B-1Ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cappuccino" width="50" height="50"/>
+        <image name="coffee" width="50" height="50"/>
+        <image name="coffeeMachine" width="750" height="1103"/>
+        <image name="espresso" width="50" height="50"/>
+        <image name="latte" width="50" height="50"/>
+        <image name="latte macchiato" width="50" height="50"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="ristretto" width="50" height="50"/>
+    </resources>
+</document>
